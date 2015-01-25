@@ -2,9 +2,9 @@
 require 'nokogiri'
 require 'open-uri'
 require 'date'
-  #doc = Nokogiri::XML(open("https://ci.podio.io/job/api/18223/artifact/coverage.xml"))
-f = File.open("coverage.xml")
-@doc = Nokogiri::XML(File.open("coverage.xml"))
+
+f = File.open("books.xml")
+@doc = Nokogiri::XML(File.open("books.xml"))
 puts @doc.xpath("/coverage[1]/@line-rate")
 #timestamp = @doc.xpath("/coverage[1]/@timestamp")
 
